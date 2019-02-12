@@ -7,8 +7,8 @@ all : test-gst test-avl
 trees : trees.c queue.o queue.h sll.h sll.o string.h string.o bst.h bst.o avl.h avl.o gst.h gst.o scanner.h scanner.o
 		gcc $(LOPTS) trees.c avl.o gst.o bst.o queue.o sll.o string.o scanner.o -o trees
 
-test-gst : gst-0-0.c queue.o queue.h sll.h sll.o integer.h integer.o bst.h bst.o gst.h gst.o
-		gcc $(LOPTS) gst-0-0.c gst.c bst.o queue.o sll.o integer.o -o test-gst
+test-gst : test-gst.c queue.o queue.h sll.h sll.o integer.h integer.o bst.h bst.o gst.h gst.o
+		gcc $(LOPTS) test-gst.c gst.c bst.o queue.o sll.o integer.o -o test-gst
 
 test-avl : avl-0-0.c queue.o queue.h sll.h sll.o integer.h integer.o real.h real.o string.h string.o bst.h bst.o
 		gcc $(LOPTS) avl-0-0.c avl.c bst.o queue.o sll.o integer.o real.o string.o -o test-avl
