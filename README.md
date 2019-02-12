@@ -30,3 +30,7 @@ function will construct a min-heap, whereas rcompare() will construct a max-heap
 Assignment 2:
 Here we take the basic BST module from the last assignment and modify it to create self balancing trees, an AVL and a GST (green
 binary search tree).
+
+Assingment 3:
+This project first takes the previous structures and uses them to build a binomial heap. This heap is then used to implement prim's
+algorithm to find a minimum spanning tree of a weighted, undirected graph.
