@@ -7,11 +7,8 @@ all : test-binomial prim
 prim : prim.c vertex.o vertex.h edge.o edge.h binomial.o binomial.h avl.o avl.h bst.o bst.h queue.o queue.h sll.o sll.h dll.o dll.h integer.o integer.h scanner.o scanner.h
 		gcc $(LOPTS) prim.c vertex.o edge.o binomial.o avl.o bst.o queue.o sll.o dll.o integer.o scanner.o -o prim -lm
 
-test-binomial : binomial-0-9.c binomial.o binomial.h queue.o queue.h sll.o sll.h dll.o dll.h integer.o integer.h real.o real.h string.o string.h
-		gcc $(LOPTS) binomial-0-9.c binomial.o queue.o sll.o dll.o integer.o real.o string.o -o test-binomial -lm
-
-test-avl : avl-0-8.c queue.o queue.h sll.h sll.o integer.h integer.o real.h real.o string.h string.o bst.h bst.o
-		gcc $(LOPTS) avl-0-8.c avl.c bst.o queue.o sll.o integer.o real.o string.o -o test-avl
+test-binomial : test-binomial.c binomial.o binomial.h queue.o queue.h sll.o sll.h dll.o dll.h integer.o integer.h real.o real.h string.o string.h
+		gcc $(LOPTS) test-binomial.c binomial.o queue.o sll.o dll.o integer.o real.o string.o -o test-binomial -lm
 
 binomial.o :  binomial.c binomial.h queue.h dll.h
 		gcc $(OOPTS) binomial.c
