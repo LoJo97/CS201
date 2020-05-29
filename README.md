@@ -23,7 +23,7 @@ these structures have the typical functions to add, delete, get, and set values,
 
 ### Assignment 1:
 This assignment builds off the last and implements a binary search tree and a heap. Heap is then used to construct a heapsort
-executeable. How the heap is built is based off of the comparator function passed in. For example, INTEGER's regular compare()
+executable. How the heap is built is based off of the comparator function passed in. For example, INTEGER's regular compare()
 function will construct a min-heap, whereas rcompare() will construct a max-heap.
 
 ### Assignment 2:
